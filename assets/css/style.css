@@ -1,0 +1,284 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #d3e0ea;
+  font-family: 'Merriweather', serif;
+  padding: 20px;
+}
+
+a {
+  color: #276678;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #276678;
+}
+
+a:hover,
+a:focus {
+  color: black;
+}
+
+main {
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  margin: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1800px;
+
+}
+
+/* HEADER */
+header {
+  padding: 5px 3px 5px 3px;
+  margin: 0 auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffffff;
+  text-align: right;
+
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 36px;
+}
+
+nav {
+  padding-top: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+/* Top Container */
+.top-container {
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 30px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  float: left;
+  position: relative;
+}
+
+.top-container .img {
+  padding: 10px;
+
+}
+
+.top-container .img img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.top-text {
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.top-container-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  color: #005082;
+  padding: 30px;
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  border-radius: 5px;
+  background-color: #f2f6f9;
+}
+
+.top-container h1 {
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  color: #005082;
+}
+
+.top-container h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.0rem;
+  color: #005082;
+}
+
+.top-container p {
+  line-height: 2;
+  margin-top: 3%;
+}
+
+/* Middle Container */
+
+.middle-container {
+  background-color: rgb(255, 255, 255, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-top: 100px;
+  padding: 30px;
+}
+
+.middle-container-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  color: #005082;
+  padding: 30px;
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  border-radius: 5px;
+  background-color: #f2f6f9;
+}
+
+/* Bottom Container */
+.bottom-container {
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 50px;
+  display: flex;
+  flex-wrap: stretch;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+}
+
+.bottom-container-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  color: #005082;
+  padding: 30px;
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  border-radius: 5px;
+  background-color: #f2f6f9;
+}
+
+.contact-link {
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Card */
+.card {
+  flex: 1 0 50%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  position: relative;
+  max-width: 44%;
+  margin: 10px 20px 10px 20px;
+}
+
+.card-large {
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 2%;
+  max-width: 90%;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  border: solid #80dfff 5px;
+  border-radius: 5%;
+
+}
+
+.card-large img {
+  width: 100%;
+  border: solid #80dfff 5px;
+  border-radius: 5%;
+}
+
+.card-large header {
+  padding: 5px;
+  color: black;
+  border-radius: 5px;
+  text-align: left;
+  position: absolute;
+  background: #80dfff;
+  padding: 10px 20px 10px 20px;
+}
+
+.card header {
+  padding: 5px;
+  color: black;
+  border-radius: 5px;
+  text-align: left;
+  position: absolute;
+  background: #80dfff;
+  padding: 10px 20px 10px 20px;
+}
+
+/* Screen Resize */
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  .top-container {
+    flex-direction: row;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .top-text {
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
