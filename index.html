@@ -5,96 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500&family=Sacramento&display=swap"
-        rel="stylesheet" />
     <title>Levi Hickman's Portfolio</title>
+
 </head>
 
-<body>
-    <header class="container">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
+<body class="container grey lighten-2">
+    <nav>
+        <div class="nav-wrapper">
+            <!-- <a href="#" class="brand-logo">Logo</a> -->
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
 
-    <main class="container">
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
 
-        <section class="top-container">
-            <h2 class="top-container-header">About Me</h2>
+    </nav>
 
+    <div class="row">
+        <div class="card large" id="about">
 
-            <div class="row">
-                <div class="img">
-                    <img src="assets/images/profile.jpg" alt="Profile Picture">
-                </div>
-                <div class="top-text">
-                    <h1>Levi Hickman</h1>
-                    <h2>a programmer</h2>
-                    <p>My name is Levi Hickman. I love anything related to the outdoors -- hiking, camping, parkour,
-                        longboarding, etc.
-                        I'm teaching myself to play the guitar, and harmonica. I'm also teaching myself how to draw, and
-                        write.
-                    </p>
-                </div>
-            </div>
-        </section>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="card large" id="projects">
 
-        <section class="middle-container" id="projects">
-            <h2 class="middle-container-header">Projects</h2>
-            <div class="card-large">
-                <header>Portfolio</header>
-                <a href="https://leviathan902.github.io/Levi-Hickman-Portfolio/"><img src="assets/images/image_1.PNG"
-                        alt="Portfolio"></a>
-            </div>
-            <div class="card">
-                <header>Refactor Project</header>
-                <a href="https://leviathan902.github.io/Horiseon-Refactor/"><img src="assets/images/image_2.PNG"
-                        alt="Refactor Project"></a>
-            </div>
-            <div class="card">
-                <header>AI That Does Your Homework</header>
-                <a href="assets/images/image_3.PNG"><img src="assets/images/image_3.PNG"
-                        alt="AI That Does Your Homework"></a>
-            </div>
-            <div class="card">
-                <header>Hear a Joke</header>
-                <a href="assets/images/image_4.PNG"><img src="assets/images/image_4.PNG" alt="Hear a Joke"></a>
-            </div>
-            <div class="card">
-                <header>Reverse Time Machine</header>
-                <a href="assets/images/image_5.PNG"><img src="assets/images/image_5.PNG" alt="Reverse Time Machine"></a>
-            </div>
-        </section>
+        </div>
+    </div>
 
-
-        <section class="bottom-container" id="contact-me">
-            <h2 class="bottom-container-header">Contact Me</h2>
+    <div class="row">
+        <div class="card small" id="contact-me">
+            <h2 class="">Contact Me</h2>
             <a class="contact-link" href="https://www.linkedin.com/in/levi-hickman/">LinkedIn</a>
             <a class="contact-link" href="mailto:levi.hickman@gmail.com">Contact Me</a>
 
-
-        </section>
-    </main>
-    <footer>
-        <p class="copyright">© 2021 Levi Hickman</p>
-    </footer>
+        </div>
+    </div>
 
 
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
 </body>
 
 </html>
