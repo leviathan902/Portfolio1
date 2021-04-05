@@ -44,7 +44,13 @@ header {
 
 #projects img {
     width: 100%;
-    border: solid #80dfff 5px;
+    border: solid #222831 5px;
     border-radius: 5%;
   
   }
+
+  /* #top-row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  } */
