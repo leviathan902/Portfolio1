@@ -41,3 +41,10 @@ header {
   .valign-wrapper {
     justify-content: center;
 }
+
+#projects img {
+    width: 100%;
+    border: solid #80dfff 5px;
+    border-radius: 5%;
+  
+  }
