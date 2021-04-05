@@ -1,10 +1,10 @@
 body {
-    background-color: #e8e8e8;
+    background-color: #dddddd;
     font-family: 'Merriweather', serif;
 }
 
 nav {
-    background-color: #30475e;
+    background-color: #222831;
 }
 
 footer {
@@ -15,6 +15,14 @@ footer {
 
 header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #30475e;
+}
+
+h4 {
+    color: #f05454;
 }
 
 .card.large {
@@ -44,7 +52,7 @@ header {
 
 #projects img {
     width: 100%;
-    border: solid #222831 5px;
+    border: solid #30475e 2px;
     border-radius: 5%;
   
   }
