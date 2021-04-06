@@ -22,21 +22,21 @@ h1, h2 {
 }
 
 h4 {
-    color: #f05454;
+    color: #222831;
 }
 
 a {
-    color: #222831;
+    color: #f05454;
     font-size: 24px;
 }
 
 .card header {
     padding: 5px;
-    color: black;
-    border: solid 1px;
+    color: white;
+    /* border: solid black 1px; */
     text-align: left;
     position: absolute;
-    background: #f05454;
+    background: #30475e;
     padding: 10px 20px 10px 20px;
   }
 
