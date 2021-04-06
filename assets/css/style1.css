@@ -25,6 +25,25 @@ h4 {
     color: #f05454;
 }
 
+.card header {
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    text-align: left;
+    position: absolute;
+    background: #f05454;
+    padding: 10px 20px 10px 20px;
+  }
+
+.card-project {
+    margin-top: 60px;
+}
+
+.card-project-bottom {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 .card.large {
     min-height: 200px;
     height: auto;
@@ -56,9 +75,3 @@ h4 {
     border-radius: 5%;
   
   }
-
-  /* #top-row {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-  } */
